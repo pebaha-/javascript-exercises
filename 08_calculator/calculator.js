@@ -30,6 +30,8 @@ const factorial = function (a) {
 // Alternative factorial solution
 const factorialWithArrayMethods = function (a) {
   return Array.from({ length: a }, (_, i) => i + 1).reduce((fact, current) => fact * current, 1);
+  // Or alternatively
+  // return [...Array(a).keys()].map(x => x + 1).reduce((fact, current) => fact * current, 1);
 }
 
 // Do not edit below this line
